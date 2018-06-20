@@ -1,0 +1,27 @@
+実行環境:WindowsServer2016
+
+1.XAMPPのインストール
+  https://www.apachefriends.org/jp/index.html
+  上記URLからインストーラ(Windows 向け XAMPP 7.2.0)をダウンロードする。
+  インストーラがダウンロードできたら起動し、説明にに従ってインストール。
+
+
+2.phpファイルの配置
+  github上のteam-A/Documents/serverにあるファイルをダウンロードし、Apacheの公開用ディレクトリに配置する。
+  デフォルトでは"C:\xampp\htdocs"以下が公開用ディレクトリ
+  
+
+以下は必要なら
+
+3.ポートフォワードの設定
+  80番ポートの転送先をXAMPPをインストールしたPCのローカルIPに設定。
+  
+4.ファイアウォールの設定
+  コントロールパネル->Windows ファイアウォール->詳細設定
+  受信の規則と送信の規則で"Apache"の通信を許可する設定を追加。
+  
+  Apacheが一覧にある場合規則の有効化を行う。
+  
+  一覧にない場合は右メニューから新しい規則の追加を行う。
+  プログラムのパスはデフォルトなら"C:\xampp\apache\bin\httpd.exe"。
+  

@@ -1,0 +1,25 @@
+1.CocoaPodsをコンパイルするPCにインストールする
+
+  $ sudo gem install cocoapods
+  $ pod setup
+  
+  参考:https://qiita.com/ShinokiRyosei/items/3090290cb72434852460
+  
+  
+2.プロジェクトをダウンロード/クローンする
+
+3.外部ライブラリをインストールする
+  $ cd team-A-dev
+  $ pod install
+  $ pod update
+
+4.プロジェクトをXcodeで開く
+  開くファイルは"enPiT2SUProduct.xcworkspace"
+
+その他コンパイルエラーへの対処
+  ・一部ライブラリ(Charts, Eureka)をコンパイルする際のSwiftのバージョンはSwift4.0にする
+    左メニューファイルリスト->"Pods"を開く
+    左2番目のメニューにあるTARGETSから該当するライブラリの設定を開く
+    "Build Settings"->"Swift Compiler - Language"->"Swift Language Version"でバージョンを変更する
+    
+  ・本体をコンパイルする際のSwiftのバージョンもSwift4.0にした方がいいかもしれない

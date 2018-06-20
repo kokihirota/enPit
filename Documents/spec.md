@@ -1,0 +1,11 @@
+- 位置情報を管理するLocationManager
+- 履歴情報を管理するRecordManager
+- スタート、ポーズ、リセット
+- 履歴は合計値を管理
+- リセットを押されたら履歴にデータを送る
+- データの読み書きは全てRecordManagerを仲介して行う
+- firstviewはLocationManagerを呼び出し情報を取得する
+- secondviewがRecordManagerから履歴を読み込む
+- 計っている時間のみ歩数と距離を取得
+- 一日の累計値（距離、歩数など）と一回ごとの合計を分けて管理
+- 一日の記録からグラフに反映
